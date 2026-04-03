@@ -437,6 +437,12 @@
   .bg-\[url\(\'\/assets\/yoga-therapy\.png\'\)\] {
     background-image: url('/assets/yoga-therapy.png');
   }
+  .bg-\[url\(\'assets\/banner-img\.png\'\)\] {
+    background-image: url('assets/banner-img.png');
+  }
+  .bg-\[url\(\'assets\/yoga-therapy\.png\'\)\] {
+    background-image: url('assets/yoga-therapy.png');
+  }
   .bg-cover {
     background-size: cover;
   }
