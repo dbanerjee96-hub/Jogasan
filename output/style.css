@@ -398,11 +398,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\/Jogasan\/assets\/banner_img\.png\'\)\] {
-    background-image: url('/Jogasan/assets/banner_img.png');
+  .bg-\[url\(\'\/assets\/banner_img\.png\'\)\] {
+    background-image: url('/assets/banner_img.png');
   }
-  .bg-\[url\(\'\/Jogasan\/assets\/yoga_therapy\.png\'\)\] {
-    background-image: url('/Jogasan/assets/yoga_therapy.png');
+  .bg-\[url\(\'\/assets\/yoga_therapy\.png\'\)\] {
+    background-image: url('/assets/yoga_therapy.png');
   }
   .bg-cover {
     background-size: cover;
