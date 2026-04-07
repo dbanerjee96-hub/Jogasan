@@ -204,9 +204,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
@@ -215,9 +212,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1 / 2 * 100%);
@@ -255,14 +249,8 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
   .mb-7\.5 {
     margin-bottom: calc(var(--spacing) * 7.5);
-  }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
   }
   .mb-8\.75 {
     margin-bottom: calc(var(--spacing) * 8.75);
@@ -288,9 +276,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
@@ -312,9 +297,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3 / 4 * 100%);
   }
@@ -333,9 +315,6 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
-  .max-w-118 {
-    max-width: calc(var(--spacing) * 118);
-  }
   .max-w-118\.75 {
     max-width: calc(var(--spacing) * 118.75);
   }
@@ -345,23 +324,12 @@
   .max-w-md {
     max-width: var(--container-md);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-16 {
     --tw-translate-x: calc(var(--spacing) * -16);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -374,9 +342,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -395,9 +360,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -436,17 +398,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\/assets\/banner_img\.png\)\] {
-    background-image: url(/assets/banner_img.png);
+  .bg-\[url\(\'\/Jogasan\/assets\/banner_img\.png\'\)\] {
+    background-image: url('/Jogasan/assets/banner_img.png');
   }
-  .bg-\[url\(\/assets\/yoga_therapy\.png\)\] {
-    background-image: url(/assets/yoga_therapy.png);
-  }
-  .bg-\[url\(assets\/banner_img\.png\)\] {
-    background-image: url(assets/banner_img.png);
-  }
-  .bg-\[url\(assets\/yoga_therapy\.png\)\] {
-    background-image: url(assets/yoga_therapy.png);
+  .bg-\[url\(\'\/Jogasan\/assets\/yoga_therapy\.png\'\)\] {
+    background-image: url('/Jogasan/assets/yoga_therapy.png');
   }
   .bg-cover {
     background-size: cover;
@@ -459,9 +415,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -481,9 +434,6 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
@@ -492,9 +442,6 @@
   }
   .py-6\.25 {
     padding-block: calc(var(--spacing) * 6.25);
-  }
-  .py-12 {
-    padding-block: calc(var(--spacing) * 12);
   }
   .py-12\.5 {
     padding-block: calc(var(--spacing) * 12.5);
@@ -567,13 +514,6 @@
   }
   .italic {
     font-style: italic;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .hover\:border-black {
     &:hover {
@@ -920,11 +860,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -934,7 +869,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
