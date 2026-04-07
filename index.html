@@ -16,18 +16,21 @@
 
     <header class="absolute top-0 left-0 w-full">
         <div class="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 py-6 sm:py-5 md:py-10 w-full">
-            <nav class="flex items-center justify-between">
+            <nav class="flex items-center justify-between relative">
                 <div class="nav-logo">
-                    <a href=""><img src="./assets/logo.png" alt=""></a>
+                    <a href=""><img src="./assets/logo.png" alt="logo" class="w-40 sm:w-48 md:w-64"></a>
                 </div>
                 <div class="navbar-collapse flex items-center">
-                    <ul class="hidden md:flex items-center gap-6 lg:gap-15">
+                    <ul id="mobile_menu"
+                        class="hidden md:flex md:static md:w-auto md:h-auto md:bg-transparent md:flex-row absolute top-full inset-x-0 w-full bg-black flex-col items-center justify-center gap-6 text-white z-50 py-6 text-center">
                         <li class="nav-items"><a class="nav-links active text-pink-700" href="">Home</a></li>
-                        <li class="nav-items"><a class="nav-links text-white" href="">About</a></li>
-                        <li class="nav-items"><a class="nav-links text-white" href="">Blog</a></li>
-                        <li class="nav-items"><a class="nav-links text-white" href="">Contact Us</a></li>
+                        <li class="nav-items"><a class="nav-links text-white hover:text-pink-700" href="">About</a></li>
+                        <li class="nav-items"><a class="nav-links text-white hover:text-pink-700" href="">Blog</a></li>
+                        <li class="nav-items"><a class="nav-links text-white hover:text-pink-700" href="">Contact Us</a>
+                        </li>
                     </ul>
-                    <div class="hamburger ml-4 lg:ml-15"><img src="./assets/humburger.png" alt=""></div>
+                    <div id="hamburger" class="hamburger ml-4 lg:ml-15 cursor-pointer"><img src="./assets/humburger.png"
+                            alt=""></div>
                 </div>
             </nav>
         </div>
@@ -37,8 +40,8 @@
 
         <!-- Banner Section Starts -->
 
-        <section class="min-h-screen bg-cover bg-center bg-no-repeat flex items-center"
-            style="background-image: url('./assets/banner-img.png');">
+        <section
+            class="min-h-screen bg-cover bg-center bg-no-repeat flex items-center bg-[url(/assets/banner_img.png)]">
             <div class="max-w-7xl mx-auto w-full px-4 md:px-6">
                 <div class="flex justify-center lg:justify-end">
                     <div class="banner-content text-center md:text-left max-w-full sm:max-w-md lg:max-w-125">
@@ -59,8 +62,9 @@
                         </p>
 
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
-                                Read More
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full hover:border-black hover:text-black">
+                                More
                             </a>
                         </div>
                     </div>
@@ -95,7 +99,8 @@
                             </p>
                         </div>
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Read More
                             </a>
                         </div>
@@ -131,7 +136,8 @@
                         </p>
 
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Read More
                             </a>
                         </div>
@@ -152,7 +158,8 @@
                         </p>
 
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Read More
                             </a>
                         </div>
@@ -173,7 +180,8 @@
                         </p>
 
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Read More
                             </a>
                         </div>
@@ -214,7 +222,8 @@
                             </p>
                         </div>
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Read More
                             </a>
                         </div>
@@ -307,7 +316,8 @@
                             </div>
                         </div>
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Sign Up Now
                             </a>
                         </div>
@@ -342,7 +352,7 @@
                             </p>
 
                             <div class="tertiary-btn">
-                                <a href="#" class="text-2xl text-white">
+                                <a href="#" class="text-2xl text-white hover:underline">
                                     Read More
                                 </a>
                             </div>
@@ -364,7 +374,7 @@
                             </p>
 
                             <div class="tertiary-btn">
-                                <a href="#" class="text-2xl text-white">
+                                <a href="#" class="text-2xl text-white hover:underline">
                                     Read More
                                 </a>
                             </div>
@@ -386,7 +396,7 @@
                             </p>
 
                             <div class="tertiary-btn">
-                                <a href="#" class="text-2xl text-white">
+                                <a href="#" class="text-2xl text-white hover:underline">
                                     Read More
                                 </a>
                             </div>
@@ -431,7 +441,8 @@
                             </p>
                         </div>
                         <div class="secondary-btn">
-                            <a href="#" class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full">
+                            <a href="#"
+                                class="px-8 py-3.5 text-2xl border border-pink-400 text-pink-400 rounded-full  hover:border-black hover:text-black">
                                 Read More
                             </a>
                         </div>
@@ -451,8 +462,8 @@
 
         <!-- Therapy Starts -->
 
-        <section class="therapy-section py-12.5 md:py-25 px-5 bg-no-repeat bg-center bg-cover"
-            style="background-image: url('./assets/yoga-therapy.png');">
+        <section
+            class="therapy-section py-12.5 md:py-25 px-5 bg-no-repeat bg-center bg-cover bg-[url(/assets/yoga_therapy.png)]">
             <div class="max-w-7xl mx-auto w-full flex justify-center">
                 <div class="therapy flex flex-col items-start">
                     <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-sans font-bold text-white mb-10">
@@ -517,6 +528,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
+
+        let hamburger = document.getElementById("hamburger");
+        let mobile_menu = document.getElementById("mobile_menu");
+
+        hamburger.addEventListener("click", function () {
+            mobile_menu.classList.toggle("hidden");
+        });
+
+
+
+
         let swiper = new Swiper(".mySwiper", {
             loop: true,
             navigation: {
