@@ -195,9 +195,6 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
@@ -312,9 +309,6 @@
   .h-px {
     height: 1px;
   }
-  .h-screen {
-    height: 100vh;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -335,9 +329,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-screen {
-    width: 100vw;
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
@@ -445,20 +436,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\/assets\/\.png\)\] {
-    background-image: url(/assets/.png);
-  }
   .bg-\[url\(\/assets\/banner_img\.png\)\] {
     background-image: url(/assets/banner_img.png);
   }
-  .bg-\[url\(\/assets\/therapy_img\.png\)\] {
-    background-image: url(/assets/therapy_img.png);
-  }
-  .bg-\[url\(\/assets\/yoga-therapy\.png\)\] {
-    background-image: url(/assets/yoga-therapy.png);
-  }
   .bg-\[url\(\/assets\/yoga_therapy\.png\)\] {
     background-image: url(/assets/yoga_therapy.png);
+  }
+  .bg-\[url\(assets\/banner_img\.png\)\] {
+    background-image: url(assets/banner_img.png);
+  }
+  .bg-\[url\(assets\/yoga_therapy\.png\)\] {
+    background-image: url(assets/yoga_therapy.png);
   }
   .bg-cover {
     background-size: cover;
@@ -705,11 +693,6 @@
       display: flex;
     }
   }
-  .md\:hidden {
-    @media (width >= 48rem) {
-      display: none;
-    }
-  }
   .md\:h-40 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 40);
@@ -873,11 +856,6 @@
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
-    }
-  }
-  .lg\:gap-15 {
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 15);
     }
   }
   .lg\:px-25 {
