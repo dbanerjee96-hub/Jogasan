@@ -120,7 +120,7 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
   img, video {
     max-width: 100%;
@@ -264,6 +264,9 @@
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
+  .ml-12\.5 {
+    margin-left: calc(var(--spacing) * 12.5);
+  }
   .block {
     display: block;
   }
@@ -383,6 +386,9 @@
   .border-pink-600 {
     border-color: var(--color-pink-600);
   }
+  .bg-\[\#f6eeef\] {
+    background-color: #f6eeef;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -452,8 +458,8 @@
   .text-start {
     text-align: start;
   }
-  .font-sans {
-    font-family: var(--font-sans);
+  .font-\[\'Lucida_Bright\'\] {
+    font-family: 'Lucida Bright';
   }
   .text-2xl {
     font-size: var(--text-2xl);
